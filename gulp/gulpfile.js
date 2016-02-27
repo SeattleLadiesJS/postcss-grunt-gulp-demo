@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-		postcss = require('gulp-postcss');
+	postcss = require('gulp-postcss');
 
 // Array to store PostCSS plugins
 var processors = [
@@ -18,3 +18,9 @@ gulp.task('styles', function() {
 		// Output the transformed CSS to the 
 		.pipe(gulp.dest('prod'));
 });
+
+gulp.task('watch', function(){
+	return gulp.watch('dev/main.css', ['styles']);
+});
+
+gulp.task('default', ['styles', 'watch']);
