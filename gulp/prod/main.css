@@ -126,6 +126,30 @@ section {
 }
 
 
+/*=====================================
+=            Demo Exercise          =
+=====================================*/
+.header {
+  padding: 25px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  color: #ff0000;
+  font-size: 36px;
+}
+
+.description {
+  font-family: Verdana, sans-serif;
+  line-height: 2em;
+  margin: 0 2em;
+}
+
+.picture {
+  border: solid 3px pink;
+  margin: 0;
+}
 
 
 
